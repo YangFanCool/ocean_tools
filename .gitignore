@@ -1,0 +1,12 @@
+# Data files (too large for git)
+*.nc
+*.npy
+*.raw
+*.npz
+
+# Output
+visualization/figs/
+
+# OS
+.DS_Store
+__pycache__/
