@@ -1,8 +1,11 @@
-# Data files (too large for git)
-*.nc
+# Large data files
 *.npy
 *.raw
 *.npz
+ocean.nc
+
+# Keep mesh.nc (3.3 MB, lonCell + latCell only)
+!mesh.nc
 
 # Output
 visualization/figs/
