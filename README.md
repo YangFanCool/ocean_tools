@@ -11,6 +11,17 @@ ocean/
 ├── benchmarks/             DiT architecture ablation charts (PSNR, time, size)
 ```
 
+## Data files (not in repo)
+
+Large data files are gitignored. Obtain them from the compute server before deleting local copies.
+
+| File | Size | Location on server | Used by |
+|------|------|--------------------|---------|
+| `visualization/ocean.nc` | 1.8 GB | `/project/ml4scivis/fan/data/ocean/output.nc` | `plot_ocean_layers.py`, `prepare_coords.py`, `render.py` |
+| `visualization/coord.npy` | 169 MB | Generated locally by `prepare_coords.py` | — |
+| `visualization/salinity_t0.raw` | 56 MB | Generated locally | — |
+`visualization/mesh.nc` (3.3 MB) and `rendering/cell_id_map.npz` (1.5 MB) **are** tracked in git.
+
 ## visualization/
 
 Matplotlib-based exploration of the raw `ocean.nc` dataset.

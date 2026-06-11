@@ -1,11 +1,11 @@
 # Large data files
 *.npy
 *.raw
-*.npz
 ocean.nc
 
-# Keep mesh.nc (3.3 MB, lonCell + latCell only)
+# Keep small binaries
 !mesh.nc
+!cell_id_map.npz
 
 # Output
 visualization/figs/
